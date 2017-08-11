@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEB1FA2E1F3D8AB8009CD0BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA2D1F3D8AB8009CD0BC /* main.m */; };
+		CEB1FA311F3D8AB8009CD0BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA301F3D8AB8009CD0BC /* AppDelegate.m */; };
+		CEB1FA341F3D8AB8009CD0BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA331F3D8AB8009CD0BC /* ViewController.m */; };
+		CEB1FA371F3D8AB8009CD0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB1FA351F3D8AB8009CD0BC /* Main.storyboard */; };
+		CEB1FA391F3D8AB8009CD0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB1FA381F3D8AB8009CD0BC /* Assets.xcassets */; };
+		CEB1FA3C1F3D8AB8009CD0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB1FA3A1F3D8AB8009CD0BC /* LaunchScreen.storyboard */; };
+		CEB1FA5A1F3D8FDE009CD0BC /* Orca.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA561F3D8FDE009CD0BC /* Orca.m */; };
+		CEB1FA5B1F3D8FDE009CD0BC /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA581F3D8FDE009CD0BC /* Penguin.m */; };
+		CEB1FA5F1F3D9025009CD0BC /* SeaWorldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA5E1F3D9025009CD0BC /* SeaWorldModel.m */; };
+		CEB1FA651F3D92CF009CD0BC /* SeaWorldConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA641F3D92CF009CD0BC /* SeaWorldConfigurator.m */; };
+		CEB1FA681F3D94B5009CD0BC /* ApplicationCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA671F3D94B5009CD0BC /* ApplicationCore.m */; };
+		CEF229B01F3DA1450061947A /* SeaWorldViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229AE1F3DA1450061947A /* SeaWorldViewCell.m */; };
+		CEF229B11F3DA1450061947A /* SeaWorldViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF229AF1F3DA1450061947A /* SeaWorldViewCell.xib */; };
+		CEF229B41F3DA5E40061947A /* PopulationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229B31F3DA5E40061947A /* PopulationController.m */; };
+		CEF229BA1F3DCCA70061947A /* SeaWorldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229B91F3DCCA70061947A /* SeaWorldCell.m */; };
+		CEF229BD1F3DCDC50061947A /* OrcaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229BC1F3DCDC50061947A /* OrcaCell.m */; };
+		CEF229C01F3DCDD90061947A /* PenguinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229BF1F3DCDD90061947A /* PenguinCell.m */; };
+		CEF229C31F3DCE1A0061947A /* AnimalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229C21F3DCE1A0061947A /* AnimalCell.m */; };
+		CEF229C61F3DD1450061947A /* SeaWorldCellGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229C51F3DD1450061947A /* SeaWorldCellGenerator.m */; };
+		CEF229C91F3DDA5B0061947A /* SeaWorldMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229C81F3DDA5B0061947A /* SeaWorldMatrix.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEB1FA291F3D8AB8009CD0BC /* SeaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB1FA2D1F3D8AB8009CD0BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEB1FA2F1F3D8AB8009CD0BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEB1FA301F3D8AB8009CD0BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEB1FA321F3D8AB8009CD0BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEB1FA331F3D8AB8009CD0BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEB1FA361F3D8AB8009CD0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB1FA381F3D8AB8009CD0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB1FA3B1F3D8AB8009CD0BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB1FA3D1F3D8AB8009CD0BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB1FA521F3D8FDE009CD0BC /* AnimalInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimalInterface.h; path = Models/Animals/AnimalInterface.h; sourceTree = "<group>"; };
+		CEB1FA551F3D8FDE009CD0BC /* Orca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Orca.h; path = Models/Animals/Orca.h; sourceTree = "<group>"; };
+		CEB1FA561F3D8FDE009CD0BC /* Orca.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Orca.m; path = Models/Animals/Orca.m; sourceTree = "<group>"; };
+		CEB1FA571F3D8FDE009CD0BC /* Penguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Penguin.h; path = Models/Animals/Penguin.h; sourceTree = "<group>"; };
+		CEB1FA581F3D8FDE009CD0BC /* Penguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Penguin.m; path = Models/Animals/Penguin.m; sourceTree = "<group>"; };
+		CEB1FA5D1F3D9025009CD0BC /* SeaWorldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldModel.h; path = Models/Fields/SeaWorldModel.h; sourceTree = "<group>"; };
+		CEB1FA5E1F3D9025009CD0BC /* SeaWorldModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldModel.m; path = Models/Fields/SeaWorldModel.m; sourceTree = "<group>"; };
+		CEB1FA631F3D92CF009CD0BC /* SeaWorldConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldConfigurator.h; path = Controllers/SeaWorldConfigurator.h; sourceTree = "<group>"; };
+		CEB1FA641F3D92CF009CD0BC /* SeaWorldConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldConfigurator.m; path = Controllers/SeaWorldConfigurator.m; sourceTree = "<group>"; };
+		CEB1FA661F3D94B5009CD0BC /* ApplicationCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationCore.h; path = Controllers/ApplicationCore.h; sourceTree = "<group>"; };
+		CEB1FA671F3D94B5009CD0BC /* ApplicationCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationCore.m; path = Controllers/ApplicationCore.m; sourceTree = "<group>"; };
+		CEF229AD1F3DA1450061947A /* SeaWorldViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldViewCell.h; path = Views/SeaWorldViewCell.h; sourceTree = "<group>"; };
+		CEF229AE1F3DA1450061947A /* SeaWorldViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldViewCell.m; path = Views/SeaWorldViewCell.m; sourceTree = "<group>"; };
+		CEF229AF1F3DA1450061947A /* SeaWorldViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SeaWorldViewCell.xib; path = Views/SeaWorldViewCell.xib; sourceTree = "<group>"; };
+		CEF229B21F3DA5E40061947A /* PopulationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopulationController.h; path = Controllers/PopulationController.h; sourceTree = "<group>"; };
+		CEF229B31F3DA5E40061947A /* PopulationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopulationController.m; path = Controllers/PopulationController.m; sourceTree = "<group>"; };
+		CEF229B81F3DCCA70061947A /* SeaWorldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldCell.h; path = Models/Fields/SeaWorldCell.h; sourceTree = "<group>"; };
+		CEF229B91F3DCCA70061947A /* SeaWorldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldCell.m; path = Models/Fields/SeaWorldCell.m; sourceTree = "<group>"; };
+		CEF229BB1F3DCDC40061947A /* OrcaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrcaCell.h; path = Models/Fields/OrcaCell.h; sourceTree = "<group>"; };
+		CEF229BC1F3DCDC50061947A /* OrcaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrcaCell.m; path = Models/Fields/OrcaCell.m; sourceTree = "<group>"; };
+		CEF229BE1F3DCDD90061947A /* PenguinCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PenguinCell.h; path = Models/Fields/PenguinCell.h; sourceTree = "<group>"; };
+		CEF229BF1F3DCDD90061947A /* PenguinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PenguinCell.m; path = Models/Fields/PenguinCell.m; sourceTree = "<group>"; };
+		CEF229C11F3DCE1A0061947A /* AnimalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimalCell.h; path = Models/Fields/AnimalCell.h; sourceTree = "<group>"; };
+		CEF229C21F3DCE1A0061947A /* AnimalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimalCell.m; path = Models/Fields/AnimalCell.m; sourceTree = "<group>"; };
+		CEF229C41F3DD1450061947A /* SeaWorldCellGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldCellGenerator.h; path = Controllers/SeaWorldCellGenerator.h; sourceTree = "<group>"; };
+		CEF229C51F3DD1450061947A /* SeaWorldCellGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldCellGenerator.m; path = Controllers/SeaWorldCellGenerator.m; sourceTree = "<group>"; };
+		CEF229C71F3DDA5B0061947A /* SeaWorldMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldMatrix.h; path = Models/SeaWorldMatrix.h; sourceTree = "<group>"; };
+		CEF229C81F3DDA5B0061947A /* SeaWorldMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldMatrix.m; path = Models/SeaWorldMatrix.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB1FA261F3D8AB8009CD0BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEB1FA201F3D8AB8009CD0BC = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA2B1F3D8AB8009CD0BC /* SeaWorld */,
+				CEB1FA2A1F3D8AB8009CD0BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB1FA2A1F3D8AB8009CD0BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA291F3D8AB8009CD0BC /* SeaWorld.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB1FA2B1F3D8AB8009CD0BC /* SeaWorld */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA691F3D9C60009CD0BC /* Views */,
+				CEB1FA451F3D8B0C009CD0BC /* Controllers */,
+				CEB1FA441F3D8B02009CD0BC /* Models */,
+				CEB1FA2F1F3D8AB8009CD0BC /* AppDelegate.h */,
+				CEB1FA301F3D8AB8009CD0BC /* AppDelegate.m */,
+				CEB1FA321F3D8AB8009CD0BC /* ViewController.h */,
+				CEB1FA331F3D8AB8009CD0BC /* ViewController.m */,
+				CEB1FA351F3D8AB8009CD0BC /* Main.storyboard */,
+				CEB1FA381F3D8AB8009CD0BC /* Assets.xcassets */,
+				CEB1FA3A1F3D8AB8009CD0BC /* LaunchScreen.storyboard */,
+				CEB1FA3D1F3D8AB8009CD0BC /* Info.plist */,
+				CEB1FA2C1F3D8AB8009CD0BC /* Supporting Files */,
+			);
+			path = SeaWorld;
+			sourceTree = "<group>";
+		};
+		CEB1FA2C1F3D8AB8009CD0BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA2D1F3D8AB8009CD0BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEB1FA441F3D8B02009CD0BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA5D1F3D9025009CD0BC /* SeaWorldModel.h */,
+				CEB1FA5E1F3D9025009CD0BC /* SeaWorldModel.m */,
+				CEF229C71F3DDA5B0061947A /* SeaWorldMatrix.h */,
+				CEF229C81F3DDA5B0061947A /* SeaWorldMatrix.m */,
+				CEB1FA5C1F3D8FF6009CD0BC /* Fields */,
+				CEB1FA501F3D8FB1009CD0BC /* Animals */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CEB1FA451F3D8B0C009CD0BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA631F3D92CF009CD0BC /* SeaWorldConfigurator.h */,
+				CEB1FA641F3D92CF009CD0BC /* SeaWorldConfigurator.m */,
+				CEB1FA661F3D94B5009CD0BC /* ApplicationCore.h */,
+				CEB1FA671F3D94B5009CD0BC /* ApplicationCore.m */,
+				CEF229B21F3DA5E40061947A /* PopulationController.h */,
+				CEF229B31F3DA5E40061947A /* PopulationController.m */,
+				CEF229C41F3DD1450061947A /* SeaWorldCellGenerator.h */,
+				CEF229C51F3DD1450061947A /* SeaWorldCellGenerator.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CEB1FA501F3D8FB1009CD0BC /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1FA521F3D8FDE009CD0BC /* AnimalInterface.h */,
+				CEB1FA551F3D8FDE009CD0BC /* Orca.h */,
+				CEB1FA561F3D8FDE009CD0BC /* Orca.m */,
+				CEB1FA571F3D8FDE009CD0BC /* Penguin.h */,
+				CEB1FA581F3D8FDE009CD0BC /* Penguin.m */,
+			);
+			name = Animals;
+			sourceTree = "<group>";
+		};
+		CEB1FA5C1F3D8FF6009CD0BC /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				CEF229B81F3DCCA70061947A /* SeaWorldCell.h */,
+				CEF229B91F3DCCA70061947A /* SeaWorldCell.m */,
+				CEF229C11F3DCE1A0061947A /* AnimalCell.h */,
+				CEF229C21F3DCE1A0061947A /* AnimalCell.m */,
+				CEF229BB1F3DCDC40061947A /* OrcaCell.h */,
+				CEF229BC1F3DCDC50061947A /* OrcaCell.m */,
+				CEF229BE1F3DCDD90061947A /* PenguinCell.h */,
+				CEF229BF1F3DCDD90061947A /* PenguinCell.m */,
+			);
+			name = Fields;
+			sourceTree = "<group>";
+		};
+		CEB1FA691F3D9C60009CD0BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEF229AD1F3DA1450061947A /* SeaWorldViewCell.h */,
+				CEF229AE1F3DA1450061947A /* SeaWorldViewCell.m */,
+				CEF229AF1F3DA1450061947A /* SeaWorldViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB1FA281F3D8AB8009CD0BC /* SeaWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB1FA401F3D8AB8009CD0BC /* Build configuration list for PBXNativeTarget "SeaWorld" */;
+			buildPhases = (
+				CEB1FA251F3D8AB8009CD0BC /* Sources */,
+				CEB1FA261F3D8AB8009CD0BC /* Frameworks */,
+				CEB1FA271F3D8AB8009CD0BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeaWorld;
+			productName = SeaWorld;
+			productReference = CEB1FA291F3D8AB8009CD0BC /* SeaWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB1FA211F3D8AB8009CD0BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = User;
+				TargetAttributes = {
+					CEB1FA281F3D8AB8009CD0BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CEB1FA241F3D8AB8009CD0BC /* Build configuration list for PBXProject "SeaWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB1FA201F3D8AB8009CD0BC;
+			productRefGroup = CEB1FA2A1F3D8AB8009CD0BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB1FA281F3D8AB8009CD0BC /* SeaWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB1FA271F3D8AB8009CD0BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF229B11F3DA1450061947A /* SeaWorldViewCell.xib in Resources */,
+				CEB1FA3C1F3D8AB8009CD0BC /* LaunchScreen.storyboard in Resources */,
+				CEB1FA391F3D8AB8009CD0BC /* Assets.xcassets in Resources */,
+				CEB1FA371F3D8AB8009CD0BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB1FA251F3D8AB8009CD0BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF229B41F3DA5E40061947A /* PopulationController.m in Sources */,
+				CEF229C91F3DDA5B0061947A /* SeaWorldMatrix.m in Sources */,
+				CEF229C31F3DCE1A0061947A /* AnimalCell.m in Sources */,
+				CEF229C61F3DD1450061947A /* SeaWorldCellGenerator.m in Sources */,
+				CEB1FA651F3D92CF009CD0BC /* SeaWorldConfigurator.m in Sources */,
+				CEB1FA5B1F3D8FDE009CD0BC /* Penguin.m in Sources */,
+				CEF229BA1F3DCCA70061947A /* SeaWorldCell.m in Sources */,
+				CEB1FA5F1F3D9025009CD0BC /* SeaWorldModel.m in Sources */,
+				CEB1FA681F3D94B5009CD0BC /* ApplicationCore.m in Sources */,
+				CEF229C01F3DCDD90061947A /* PenguinCell.m in Sources */,
+				CEB1FA5A1F3D8FDE009CD0BC /* Orca.m in Sources */,
+				CEF229B01F3DA1450061947A /* SeaWorldViewCell.m in Sources */,
+				CEB1FA341F3D8AB8009CD0BC /* ViewController.m in Sources */,
+				CEB1FA311F3D8AB8009CD0BC /* AppDelegate.m in Sources */,
+				CEF229BD1F3DCDC50061947A /* OrcaCell.m in Sources */,
+				CEB1FA2E1F3D8AB8009CD0BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEB1FA351F3D8AB8009CD0BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB1FA361F3D8AB8009CD0BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB1FA3A1F3D8AB8009CD0BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB1FA3B1F3D8AB8009CD0BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB1FA3E1F3D8AB8009CD0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB1FA3F1F3D8AB8009CD0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB1FA411F3D8AB8009CD0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeaWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smile.SeaWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEB1FA421F3D8AB8009CD0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeaWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smile.SeaWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB1FA241F3D8AB8009CD0BC /* Build configuration list for PBXProject "SeaWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB1FA3E1F3D8AB8009CD0BC /* Debug */,
+				CEB1FA3F1F3D8AB8009CD0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB1FA401F3D8AB8009CD0BC /* Build configuration list for PBXNativeTarget "SeaWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB1FA411F3D8AB8009CD0BC /* Debug */,
+				CEB1FA421F3D8AB8009CD0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB1FA211F3D8AB8009CD0BC /* Project object */;
+}
