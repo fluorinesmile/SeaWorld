@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE5B52F31F419B5E006C0338 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5B52F21F419B5E006C0338 /* LoadingView.m */; };
+		CE5B52F61F41A49F006C0338 /* SeaWorldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5B52F51F41A49F006C0338 /* SeaWorldModel.m */; };
 		CEB1FA2E1F3D8AB8009CD0BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA2D1F3D8AB8009CD0BC /* main.m */; };
 		CEB1FA311F3D8AB8009CD0BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA301F3D8AB8009CD0BC /* AppDelegate.m */; };
 		CEB1FA341F3D8AB8009CD0BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB1FA331F3D8AB8009CD0BC /* ViewController.m */; };
@@ -25,13 +26,14 @@
 		CEF229D31F3DE6B00061947A /* OrcaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229CD1F3DE6B00061947A /* OrcaCell.m */; };
 		CEF229D41F3DE6B00061947A /* PenguinCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229CF1F3DE6B00061947A /* PenguinCell.m */; };
 		CEF229D51F3DE6B00061947A /* WorldGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229D11F3DE6B00061947A /* WorldGridCell.m */; };
-		CEF229D81F3DE6BD0061947A /* SeaWorldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229D71F3DE6BD0061947A /* SeaWorldModel.m */; };
 		CEF229DE1F3E05170061947A /* BaseAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF229DD1F3E05170061947A /* BaseAnimal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE5B52F11F419B5E006C0338 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingView.h; path = Views/LoadingView.h; sourceTree = "<group>"; };
 		CE5B52F21F419B5E006C0338 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingView.m; path = Views/LoadingView.m; sourceTree = "<group>"; };
+		CE5B52F41F41A49F006C0338 /* SeaWorldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldModel.h; path = Models/SeaWorldModel.h; sourceTree = "<group>"; };
+		CE5B52F51F41A49F006C0338 /* SeaWorldModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldModel.m; path = Models/SeaWorldModel.m; sourceTree = "<group>"; };
 		CEB1FA291F3D8AB8009CD0BC /* SeaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1FA2D1F3D8AB8009CD0BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEB1FA2F1F3D8AB8009CD0BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		CEF229CF1F3DE6B00061947A /* PenguinCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PenguinCell.m; path = Models/Cells/PenguinCell.m; sourceTree = "<group>"; };
 		CEF229D01F3DE6B00061947A /* WorldGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorldGridCell.h; path = Models/Cells/WorldGridCell.h; sourceTree = "<group>"; };
 		CEF229D11F3DE6B00061947A /* WorldGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorldGridCell.m; path = Models/Cells/WorldGridCell.m; sourceTree = "<group>"; };
-		CEF229D61F3DE6BD0061947A /* SeaWorldModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeaWorldModel.h; path = Models/Cells/SeaWorldModel.h; sourceTree = "<group>"; };
-		CEF229D71F3DE6BD0061947A /* SeaWorldModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeaWorldModel.m; path = Models/Cells/SeaWorldModel.m; sourceTree = "<group>"; };
 		CEF229DC1F3E05170061947A /* BaseAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseAnimal.h; path = Models/Animals/BaseAnimal.h; sourceTree = "<group>"; };
 		CEF229DD1F3E05170061947A /* BaseAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseAnimal.m; path = Models/Animals/BaseAnimal.m; sourceTree = "<group>"; };
 		CEF229E31F4058680061947A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 		CEB1FA441F3D8B02009CD0BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEF229D61F3DE6BD0061947A /* SeaWorldModel.h */,
-				CEF229D71F3DE6BD0061947A /* SeaWorldModel.m */,
+				CE5B52F41F41A49F006C0338 /* SeaWorldModel.h */,
+				CE5B52F51F41A49F006C0338 /* SeaWorldModel.m */,
 				CEF229C71F3DDA5B0061947A /* SeaWorldMatrix.h */,
 				CEF229C81F3DDA5B0061947A /* SeaWorldMatrix.m */,
 				CEB1FA5C1F3D8FF6009CD0BC /* Cells */,
@@ -275,8 +275,8 @@
 				CEF229B01F3DA1450061947A /* SeaWorldViewCell.m in Sources */,
 				CEF229D51F3DE6B00061947A /* WorldGridCell.m in Sources */,
 				CEB1FA341F3D8AB8009CD0BC /* ViewController.m in Sources */,
+				CE5B52F61F41A49F006C0338 /* SeaWorldModel.m in Sources */,
 				CEB1FA311F3D8AB8009CD0BC /* AppDelegate.m in Sources */,
-				CEF229D81F3DE6BD0061947A /* SeaWorldModel.m in Sources */,
 				CEB1FA2E1F3D8AB8009CD0BC /* main.m in Sources */,
 				CEF229D41F3DE6B00061947A /* PenguinCell.m in Sources */,
 			);
