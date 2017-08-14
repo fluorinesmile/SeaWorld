@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 
-#import "AnimalInterface.h"
+#import "BaseAnimal.h"
 
-@interface Penguin : NSObject <Animal>
+@interface Penguin : BaseAnimal
+
 @end

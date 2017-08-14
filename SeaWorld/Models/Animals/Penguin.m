@@ -1,9 +1,16 @@
 #import "Penguin.h"
 
+#define kPenguinReproductionStep       3
+
 @implementation Penguin
 
-- (UIImage*)icon {
-    return [UIImage imageNamed: @"penguin"];
+- (instancetype)init {
+    self = [super init];
+    if(self) {
+        self.type = kPenguin;
+        self.reproductionStep = kPenguinReproductionStep;
+    }
+    return self;
 }
 
 @end

@@ -4,9 +4,10 @@
 
 @interface ApplicationCore : NSObject
 
-@property (strong, nonatomic, readonly) SeaWorldModel* seaWorldModel;
+@property (strong, nonatomic) SeaWorldModel* seaWorldModel;
 
 + (ApplicationCore*)sharedInstance;
 - (void)generateSeaWorldModelForFrame:(CGRect)frame;
+- (void)nextStepWithCompletionBlock:(void (^)())completionBlock;
 
 @end

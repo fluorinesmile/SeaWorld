@@ -1,5 +1,4 @@
 #import "OrcaCell.h"
-
 #import "Orca.h"
 
 @implementation OrcaCell
@@ -8,6 +7,7 @@
     self = [super init];
     if(self) {
         self.icon = [UIImage imageNamed: @"orca"];
+        self.type = kOrca;
         self.animal = [[Orca alloc] init];
     }
     return self;

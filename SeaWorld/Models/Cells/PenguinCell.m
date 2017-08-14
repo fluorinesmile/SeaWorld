@@ -7,6 +7,7 @@
     self = [super init];
     if(self) {
         self.icon = [UIImage imageNamed: @"penguin"];
+        self.type = kPenguin;
         self.animal = [[Penguin alloc] init];
     }
     return self;

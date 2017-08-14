@@ -1,15 +1,15 @@
-#import "SeaWorldCellGenerator.h"
+#import "CellGenerator.h"
 
 #import "OrcaCell.h"
 #import "PenguinCell.h"
+#import "WorldGridCell.h"
 
+@implementation CellGenerator
 
-@implementation SeaWorldCellGenerator
-
-- (SeaWorldCell*)getCellForType:(SeaWorldCellType)type {
+- (WorldGridCell*)createCellForType:(GridCellType)type {
     switch (type) {
         case kEmpty:
-            return [[SeaWorldCell alloc] init];
+            return [[WorldGridCell alloc] init];
             break;
 
         case kOrca:

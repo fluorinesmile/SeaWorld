@@ -1,10 +1,13 @@
 #import <Foundation/Foundation.h>
 
-#import "SeaWorldModel.h"
+@class SeaWorldModel;
+@class SeaWorldMatrix;
 
 @interface PopulationController : NSObject
 
-- (NSArray*)createPopulation;
-- (void)setWorldMatrix:(SeaWorldMatrix*)matrix;
+- (void)refreshWorld:(SeaWorldModel*)model;
+- (void)createPopulationForWorldModelMatrix:(SeaWorldMatrix*)matrix;
+- (void)fillWorld:(SeaWorldModel*)model;
+- (NSArray*)cells;
 
 @end

@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
-#import "AnimalInterface.h"
+#import "BaseAnimal.h"
 
-@interface Orca : NSObject <Animal>
+@interface Orca : BaseAnimal
 
 @end

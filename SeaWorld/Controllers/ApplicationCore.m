@@ -1,7 +1,8 @@
 #import "ApplicationCore.h"
 
+#import "AnimalInterface.h"
+#import "WorldGridCell.h"
 #import "PopulationController.h"
-#import "SeaWorldConfigurator.h"
 
 @interface ApplicationCore () {
     PopulationController* populationController;
@@ -30,10 +31,21 @@
 }
 
 - (void)generateSeaWorldModelForFrame:(CGRect)frame {
-    SeaWorldConfigurator* seaWorldConfigurator = [[SeaWorldConfigurator alloc] init];
-    _seaWorldModel = [seaWorldConfigurator seaWorldModelForFrame: frame];
-    [populationController setWorldMatrix: _seaWorldModel.matrix];
-    _seaWorldModel.cells = [populationController createPopulation];
+    _seaWorldModel = [SeaWorldModel createWorldWithWidth: kWorldColumns height: kWorldRows freeSpace: frame];
+    populationController = [[PopulationController alloc] init];
+    [populationController createPopulationForWorldModelMatrix: _seaWorldModel.matrix];
+    [populationController fillWorld: _seaWorldModel];
+}
+
+- (void)nextStepWithCompletionBlock:(void (^)())completionBlock {
+    for(WorldGridCell* cell in _seaWorldModel.cells) {
+        if(cell.animal != nil)
+            [cell.animal step];
+    }
+    [populationController fillWorld: _seaWorldModel];
+    
+    if(completionBlock)
+        completionBlock();
 }
 
 @end
