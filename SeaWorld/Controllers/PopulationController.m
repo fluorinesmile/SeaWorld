@@ -64,10 +64,6 @@
     [[ApplicationCore sharedInstance].seaWorldModel.population removeObject: [filtrated objectAtIndex: 0]];
 }
 
-- (void)refreshWorld:(SeaWorldModel *)model {
-    
-}
-
 - (void)fillWorld:(SeaWorldModel*)model {    
     [self sortCellsForIndex];
     model.cells = [self createCells];

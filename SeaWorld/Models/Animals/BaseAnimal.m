@@ -31,8 +31,6 @@ typedef struct RowLimit RowLimit;
 
     if(![self chekEmptyCell: checkedIndex])
         return;
-//    WorldGridCell* currentCell = [self getCurrentCell];
-//    currentCell.animal = nil;
     
     self.position = checkedIndex;
     self.stepsCounter++;
@@ -87,11 +85,6 @@ typedef struct RowLimit RowLimit;
     return -1; // if all enviroment cells isn't empty
 }
 
-- (WorldGridCell*)getCurrentCell {
-    SeaWorldModel* model = [ApplicationCore sharedInstance].seaWorldModel;
-    return [model.cells objectAtIndex: self.position];
-}
-
 - (BOOL)chekEmptyCell:(NSUInteger)cellIndex {
     NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(WorldGridCell*_Nullable cell, NSDictionary<NSString *,id> *__unused _Nullable bindings) {
         return cell.animal.position == cellIndex;
@@ -100,8 +93,6 @@ typedef struct RowLimit RowLimit;
     NSArray* filtrated =  [[ApplicationCore sharedInstance].seaWorldModel.population filteredArrayUsingPredicate:
                           predicate];
 
-    
-    
     if(filtrated.count > 0)
         return NO;
 
