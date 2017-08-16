@@ -56,8 +56,18 @@
 
 - (BOOL)isPenguin:(NSInteger)index {
 
-    WorldGridCell* cell = [[ApplicationCore sharedInstance].seaWorldModel.cells objectAtIndex: index];
-    if(cell.animal && cell.animal.type == kPenguin) {
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(WorldGridCell*_Nullable cell, NSDictionary<NSString *,id> *__unused _Nullable bindings) {
+        return cell.animal.position == index;
+    }];
+    
+    NSArray* filtrated = [[ApplicationCore sharedInstance].seaWorldModel.population filteredArrayUsingPredicate:
+                           predicate];
+    if(filtrated.count == 0)
+        return NO;
+    
+    WorldGridCell* cell = [filtrated objectAtIndex: 0];
+    
+    if(cell.animal.type == kPenguin) {
         tastyPenguin = (Penguin*)cell.animal;
         return YES;
     }
